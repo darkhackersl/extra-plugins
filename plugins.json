@@ -1,0 +1,117 @@
+{
+    "repository_info": {
+        "name": "Thenu Bot Commands",
+        "version": "1.0.0",
+        "last_updated": "2024-02-20",
+        "maintainer": "@darkhackersl",
+        "description": "Official command repository for Thenu Bot"
+    },
+
+{
+    "commands": [
+        {
+            "name": "gitclone",
+            "type": "github",
+            "version": "1.0.0",
+            "description": "Clone GitHub Repositories",
+            "author": {
+                "name": "Thenu",
+                "github": "@YourUsername",
+                "contact": "example@email.com"
+            },
+            "url": "https://raw.githubusercontent.com/YourUsername/bot-commands/main/gitclone.js",
+            "pattern": "gitclone",
+            "alias": ["clone", "githubclone"],
+            "category": "github",
+            "usage": {
+                "basic": ".gitclone <github_repo_url>",
+                "examples": [
+                    ".gitclone https://github.com/username/repository",
+                    ".gitclone https://github.com/darkhackersl/Thenu-MD"
+                ]
+            },
+            "permissions": [
+                "file_system_access",
+                "network_request"
+            ],
+            "requirements": [
+                "git",
+                "zip",
+                "axios library"
+            ],
+            "features": [
+                "Clone GitHub repositories",
+                "Download repository as ZIP",
+                "Fetch repository metadata"
+            ],
+            "tags": [
+                "github", 
+                "clone", 
+                "repository"
+            ],
+            "dependencies": [
+                "axios",
+                "child_process",
+                "fs"
+            ],
+            "error_handling": {
+                "invalid_url": "Invalid GitHub repository URL",
+                "clone_failed": "Failed to clone repository",
+                "network_error": "Network request failed"
+            },
+            "performance": {
+                "average_response_time": "5-10 seconds",
+                "max_requests_per_minute": 3
+            }
+        },
+        {
+            "name": "githubsearch",
+            "type": "github",
+            "version": "1.0.0",
+            "description": "Search GitHub Repositories",
+            "author": {
+                "name": "Thenu",
+                "github": "@YourUsername",
+                "contact": "example@email.com"
+            },
+            "url": "https://raw.githubusercontent.com/YourUsername/bot-commands/main/githubsearch.js",
+            "pattern": "githubsearch",
+            "alias": ["searchrepo", "findrepo"],
+            "category": "github",
+            "usage": {
+                "basic": ".githubsearch <query>",
+                "examples": [
+                    ".githubsearch bot framework",
+                    ".githubsearch machine learning"
+                ]
+            },
+            "permissions": [
+                "network_request"
+            ],
+            "requirements": [
+                "axios library"
+            ],
+            "features": [
+                "Search GitHub repositories",
+                "Sort by stars",
+                "Display top 5 results"
+            ],
+            "tags": [
+                "github", 
+                "search", 
+                "repositories"
+            ],
+            "dependencies": [
+                "axios"
+            ],
+            "error_handling": {
+                "no_query": "Please provide a search query",
+                "network_error": "Failed to search repositories"
+            },
+            "performance": {
+                "average_response_time": "2-5 seconds",
+                "max_requests_per_minute": 5
+            }
+        }
+    ]
+}
