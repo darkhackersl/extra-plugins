@@ -19,8 +19,8 @@
                 "github": "@YourUsername",
                 "contact": "example@email.com"
             },
-            "url": "https://raw.githubusercontent.com/YourUsername/bot-commands/main/gitclone.js",
-            "pattern": "gitclone",
+            "url": "https://github.com/darkhackersl/extra-plugins/blob/1ee93d66115e5686675298290542e94cf142003b/gitclone.js",
+            "pattern": "gitclone2",
             "alias": ["clone", "githubclone"],
             "category": "github",
             "usage": {
